@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100&family=Outfit:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&family=Outfit:wght@200;400&display=swap');
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    /*(background)*/
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    /*(background)*/
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    /* (circle)*/
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    /* (circle)*/
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 10rem;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.result {
+    background: linear-gradient(1deg, var(--Light-royal-blue)30%, var(--Light-slate-blue));
+    color: var(--Light-lavender);
+    border-radius: 15px;
+    width: 350px;
+    height: 460px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result h1 {
+    margin: 30px auto;
+    font-size: 23px;
+}
+
+.great {
+    color: var(--White);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 700;
+    width: 205px;
+}
+
+.circle {
+    background: linear-gradient(0deg, hsla(241, 72%, 46%, 0)0%, hsla(256, 72%, 46%, 1)80%);
+    ;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    margin: 0px 85px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--Light-lavender);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.circle span {
+    font-weight: 700;
+    font-size: 80px;
+    color: var(--White);
+}
+
+/*____style-Sumary___*/
+.sumary {
+    background-color: var(--White);
+    box-shadow: var(--Light-lavender) 11px 15px 27px 2px;
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sumary h1 {
+    font-size: 23px;
+    margin: 30px 25px 30px;
+
+}
+
+.info {
+    width: 85%;
+    border-radius: 5px;
+    margin: 10px 25px 5px;
+    padding: 10px;
+    display: flex;
+}
+
+.sum-inf svg {
+    margin-right: 8px;
+}
+
+.sum-inf {
+    display: flex;
+    padding: 5px;
+}
+
+.number {
+    color: hsla(241, 71%, 15%, 0.397);
+    font-weight: 800;
+    margin: 0px 0px 0px 90px;
+}
+
+strong {
+    color: hsl(241, 71%, 15%);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.070);
+    color: var(--Light-red);
+    border-radius: 8px;
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.070);
+    color: var(--Orangey_yellow);
+    border-radius: 8px;
+}
+
+.verbal {
+    color: var(--Green_teal);
+    background-color: hsl(166, 100%, 37%, 0.070);
+    border-radius: 8px;
+}
+
+.visual {
+    color: var(--Cobalt_blue);
+    background-color: hsl(234, 85%, 45%, 0.070);
+    border-radius: 8px;
+}
+
+.btn {
+    margin: 20px auto;
+    background-color: var(--Dark-gray-blue);
+    color: white;
+    padding: 11px;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    border-radius: 25px;
+    width: 75%;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.attribution {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    width: 500px;
+    margin: 0px auto;
+    bottom: -172px;
+    color: rgb(0, 0, 0);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 700px) {
+    .card {
+        top: 0;
+    }
+
+    .attribution {
+        bottom: -10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        top: 0;
+    }
+
+    .attribution {
+        width: 300px;
+        bottom: -10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        top: 0;
+    }
+
+    .attribution {
+        width: 200px;
+        bottom: -10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
